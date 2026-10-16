@@ -1,208 +1,184 @@
-﻿Category,Test Name,Popular Diagnostic Centre Rate (BDT),Govt Rate (BDT)
-Pathology,CBC,400,150
-Pathology,ESR,200,50
-Pathology,D-dimer,1600,800
-Pathology,Alkaline Phosphate/ALT (SGPT)/AST (SGOT),600,200
-Pathology,Amylase/eGFR (MDRD),1600,400
-Pathology,Blood Urea,400,100
-Pathology,BNP/NT-ProBNP,2600,1500
-Pathology,Cholesterol (Total),300,100
-Pathology,CPK/Fluid for ADA/Iron,1600,400
-Pathology,Creatinine Clearance Rate,1200,300
-Pathology,FBS/Fasting Plasma Glucose/RBS,200,50
-Pathology,Fluid for Biochemical Test,1000,200
-Pathology,Plasma Glucose 2hrs ABF,200,50
-Pathology,GGT,1200,200
-Pathology,DHEA-SO4,1500,800
-Pathology,Hb Electrophoresis,2000,600
-Pathology,HDL/LDL-Cholesterol,400,150
-Pathology,Dengue NS1/ICT for Dengue Antibodies (IgG & IgM),300,100
-Pathology,Anti CCP,1800,800
-Pathology,Lipid Profile/Lactate/LDH/Lipase,1400,400
-Pathology,Liver Function Test,1000,300
-Pathology,Micro Albumin Creatinine Ratio,1300,300
-Pathology,Plasma glucose 1 hour after 50 gm glucose,250,50
-Pathology,Plasma glucose 1 hour after 75 gm glucose,250,50
-Pathology,OGTT,750,150
-Pathology,Pleural Fluid for Biochemical Test,1000,200
-Pathology,Protein Electrophoresis,1600,500
-Pathology,Prothrombin Time (INR),800,200
-Pathology,BF/Cell Morphology (Film),400,100
-Pathology,Serum Albumin/Calcium,600,150
-Pathology,Serum Creatinine,400,100
-Pathology,Serum Electrolytes,1000,400
-Pathology,Serum Uric Acid/Serum Inorganic Phosphate,600,150
-Pathology,Urine Routine Examination,400,50
-Pathology,Urine Protein Creatinine,1100,250
-Pathology,Urine R/E,300,50
-Pathology,Stool for Occult Blood Test,1400,100
-Pathology,Tuberculin Test (0.1ml = 10 TU),500,100
-Pathology,Urine for Ketone Bodies,400,50
-Pathology,Synovial Fluid for Malignant Cells (Gram/Cytomal),1200,300
-Pathology,Progesterone,700,500
-Pathology,Urine for Amphetamine,2500,500
-Pathology,Anti IgM/Anti HBc-IgM,1500,500
-Pathology,Anti HBC,1500,400
-Pathology,(Total) Anti HBe/Anti HBs/Anti HCV,1600,500
-Pathology,Anti Thyroid AB,2500,800
-Pathology,Anti-Mullerian Hormone (AMH),4000,1500
-Pathology,Anti-Nuclear Ab (ANA)/Anti-TGAB,1600,600
-Pathology,CA 19-9/C-ANCA,3500,1000
-Pathology,Cortisol/Cortisol Morning/Evening,1500,500
-Pathology,Estradiol (E2),1500,500
-Pathology,Folate/Folic Acid,1600,500
-Pathology,FT3/FT4/FSH/LH,1500,400
-Pathology,Free Testosterone,2400,800
-Pathology,B-hCG/Free PSA,1600,500
-Pathology,Rubella - IgM/Rubella IgE,1500,500
-Pathology,Insulin (Random)/PTH/PP/Fasting,1700,600
-Pathology,Prolactin/Testosterone/Progesterone/PSA,1500,500
-Pathology,H.Pylori. IgG/Pylori Anti Body,1200,400
-Pathology,Hb A1C/HBE Ag/HIV-1&2,700,300
-Pathology,HBsAg,1200,150
-Pathology,Urine for C/S /Skin for C/S,1200,200
-Pathology,HBV-DNA (Quantitative),7000,3000
-Pathology,HCV-RNA (Quantitative) PCR,12000,4000
-Pathology,S. Procalcitonin,1600,1000
-Pathology,Intact PTH/LH/P-ANCA/Copper/Total HCG,1500,600
-Pathology,Total IgE/SHBG,1500,500
-Pathology,Complement 3 (C3)/4 (C4)/CSF Analysis,1500,400
-Pathology,Interleukin-6,2200,1200
-Pathology,Vitamin D(25-OH),4000,1500
-Pathology,Vitamin D2-D3,6000,2000
-Pathology,Vitamin B12,2500,800
-Pathology,VDRL/WIDAL TEST,600,100
-Pathology,Ascitic Fluid-C/S,1200,200
-Pathology,Ascitic Fluid for Cytology,1200,300
-Pathology,Blood C/S for ANEROBIC (FAN METHOD),2500,400
-Pathology,Blood for C/S (FAN METHOD),1500,300
-Pathology,ICT for Filaria/ ICT for Kalajar/ ICT for Malaria,1600,200
-Pathology,ICT for Tuberculosis,1500,300
-Pathology,Pus for C/S/Sputum C/S/Stool for C/S,1200,200
-Pathology,R.A Test (Titre),700,200
-Pathology,RH Antibody (Anti-D AB),1200,300
-Pathology,Semen Analysis,1000,150
-Pathology,Toxo-IgG/IgM,1500,400
-Pathology,TSH Receptor Antibodies (TRAb),3000,1000
-Pathology,T3/T4/S.TSH,800,200
-Pathology,Growth Hormone,1600,600
-Pathology,H. Pylori Antibody,1500,400
-Pathology,HSV1 IgG/IgM/HSV 2-IgG/IgM,1500,500
-Pathology,C-Peptide,1800,600
-Pathology,Measles IgG/IgM,1500,500
-Pathology,HOMA IR,1500,600
-Pathology,FNAC Cytology Malignant Cells,1200,300
-Ultrasonogram,Ultrasonogram of Pregnancy Profile,1600,300
-Ultrasonogram,Ultrasonogram of Pregnancy Profile Twin Baby,2500,450
-Ultrasonogram,Ultrasonogram of KUB,1400,250
-Ultrasonogram,Ultrasonogram of Both Breast,2400,400
-Ultrasonogram,Ultrasonogram of Brain,1500,300
-Ultrasonogram,Ultrasonogram of Folliculometry,1800,400
-Ultrasonogram,Ultrasonogram of KUB & PVR,1700,250
-Ultrasonogram,Ultrasonogram of Left Breast/Right Breast,1200,250
-Ultrasonogram,Ultrasonogram of Lower Abdomen,1400,250
-Ultrasonogram,Ultrasonogram of Foetal Anomaly Scan,2500,500
-Ultrasonogram,Ultrasonogram of Foetal Anomaly Scan Twin Baby,4000,700
-Ultrasonogram,Ultrasonogram of Neck,2000,300
-Ultrasonogram,Ultrasonogram of Scrotum/Testes,1700,300
-Ultrasonogram,Ultrasonogram of Thyroid Gland,1600,300
-Ultrasonogram,Ultrasonogram of Transvaginal / TVS,1500,300
-Ultrasonogram,Ultrasonogram of Upper Abdomen,1400,250
-Ultrasonogram,Ultrasonogram of Whole Abdomen,1600,300
-Ultrasonogram,Ultrasonogram of Whole Abdomen & PVR,1700,300
-Ultrasonogram,Ultrasonogram of Whole Abdomen & MCC & PVR,1800,350
-Ultrasonogram,Ultrasonogram of KUB MCC & PVR,1700,300
-Ultrasonogram,Duplex Study of Both Lower/Upper Limb Vessels,8000,1200
-Ultrasonogram,Duplex Study of Penile Vessels,4000,800
-Ultrasonogram,USG Guide FNAC,3700,600
-Ultrasonogram,Saline Infusion Sonogram (SIS),2500,500
-Digital X-Ray,Digital Micturating Cysto Urethrogram (M.C.U.),3000,500
-Digital X-Ray,Digital Ba-meal study of Stomach duodenum Follow through (G.I. Tract),3000,600
-Digital X-Ray,Digital Barium Swallow of Oesophagus Including Hiatus Hernia,2800,500
-Digital X-Ray,Digital X-Ray of Chest PA View,600,150
-Digital X-Ray,Digital X-Ray of Both Ankle Joint (B/V),1200,250
-Digital X-Ray,Digital X-Ray of Both Clavicle AP View,600,150
-Digital X-Ray,Digital X-Ray of Both Feet / Foot (B/V),1200,250
-Digital X-Ray,Digital X-Ray of Both Hand (B/V),1200,250
-Digital X-Ray,Digital X-Ray of Both Heel (B/V),1200,250
-Digital X-Ray,Digital X-Ray of Both Knee Joint AP View,600,150
-Digital X-Ray,Digital X-Ray of Both Knee Joint (B/V) AP & Lateral,1200,250
-Digital X-Ray,Digital X-Ray of Both Shoulder Joint (B/V),2200,300
-Digital X-Ray,Digital X-Ray of Cervical Spine AP & Lateral View (B/V),1200,250
-Digital X-Ray,Digital X-Ray of Dorsal (Thoracic) Spine AP & Lateral View,1200,250
-Digital X-Ray,Digital X-Ray of Dorsal (Thoracic) Spine Lateral View,600,150
-Digital X-Ray,Digital X-Ray of Dorso Lumbar (Thoraco-Lumber) Spine (B/V) AP & Lateral View,1200,250
-Digital X-Ray,Digital X-Ray of Fistulogram,2200,500
-Digital X-Ray,Digital X-Ray of I.V.U.,2500,500
-Digital X-Ray,Digital X-Ray of Left Forearm (Radius & Ulna) AP & Lat. view Inclu. Elbow & Wrist Joint,800,150
-Digital X-Ray,Digital X-Ray of Left Humerus (ARM) AP & Lat. View Including Shoulder Joint (One Film),1200,200
-Digital X-Ray,Digital X-Ray of Left Leg including Ankle Joint AP & Lat. View,1200,250
-Digital X-Ray,Digital X-Ray of Left Shoulder Joint AP View,600,150
-Digital X-Ray,Digital X-Ray of Left Thigh (Femur) AP & Lateral view including Knee Joint,1200,250
-Digital X-Ray,Digital X-Ray of Left Shoulder Joint AP & Lateral View,1200,250
-Digital X-Ray,Digital X-Ray of Lumbo-Sacral Spine Lateral View,600,150
-Digital X-Ray,Digital X-Ray of Mastoid Towens View (S),600,150
-Digital X-Ray,Digital X-Ray of Micturating Cystogram,3000,500
-Digital X-Ray,Digital X-Ray of Neck AP & Lateral View,1200,250
-Digital X-Ray,Digital X-Ray of P.N.S O/M & Lateral View,1200,250
-Digital X-Ray,Digital X-Ray of P.N.S O/M View,600,150
-Digital X-Ray,Digital X-Ray of Right Hip Joint Lateral View,600,150
-Digital X-Ray,Digital X-Ray of S.I Joint (B/V),1200,250
-Digital X-Ray,Digital X-Ray of S.I Joint Both Oblique View,800,200
-Digital X-Ray,Digital X-Ray of Skull AP View,600,150
-Digital X-Ray,Digital X-Ray of T-Tube Cholangiogram,2800,500
-Digital X-Ray,Digital X-Ray of Plain KUB AP View,600,150
-Digital X-Ray,Digital OPG,500,200
-Digital X-Ray,BMD,3000,600
-CT Scan,CT Scan of Brain,3600,1500
-CT Scan,CT Scan of Chest (HRCT),6000,2500
-CT Scan,CT Scan of Whole Abdomen,12000,3000
-CT Scan,CT Scan of KUB,12000,3000
-CT Scan,CT Angio of Brain,12000,3500
-CT Scan,CT Abdominal Antogram,14000,4000
-CT Scan,CT Angio of Brain & Neck Vessel,15000,4000
-CT Scan,CT Scan of Left Ankle / Elbow Joint / Foot,6500,2000
-CT Scan,CT Scan of Orbits,6000,2000
-CT Scan,CT Guide (5000 + Dr. Charge),5000,1500
-CT Scan,CT Guide Core Biopsy (5500 + Inst. + Dr. Charge),5500,2000
-MRI,MRI & MRA of Brain,10000,4000
-MRI,MRI of Brain,7000,3000
-MRI,MRI of Lumbo Sacral Spine,7000,3000
-MRI,MRI of Dorsal Spine/Cervical Spine,7000,3000
-MRI,MRI of Dorsal Lumbar Spine,14300,5000
-MRI,MRI & MRV of Brain,10000,4000
-MRI,MRI of SI Joint,8500,3500
-MRI,MRI of Left / Right Knee Joint,8500,3500
-MRI,MRCP,8000,3000
-MRI,MRCP with CT Scan,10000,4500
-Others,Echo Color Doppler,3000,800
-Others,Echo 2D,1600,500
-Others,ECG,400,80
-Others,Fiber Optic Layngoscopy (FOL),2000,500
-Others,Video Endoscopy,2600,600
-Others,Full Video Colonoscopy,6000,1500
-Others,Short Video Colonoscopy,4000,1000
-Others,ETT,2800,600
-Others,Digital EEG,3000,800
-Others,Uroflowmetry,1200,300
-Others,Pulmonary function test (PFT),1200,300
-Others,Fibroscan,4000,1000
-Consumables & Extra,Lavender Tube,20,10
-Consumables & Extra,Red Tube,20,10
-Consumables & Extra,White Tube,60,20
-Consumables & Extra,Needle,40,10
-Consumables & Extra,Black Tube,25,10
-Consumables & Extra,Blue Tube,20,10
-Consumables & Extra,Vacuum Needle,20,10
-Consumables & Extra,IVU-MCU (Contrast),1300/2500,500
-Consumables & Extra,FNAC Doctor Charge (Normal),500,150
-Consumables & Extra,CD200 Taka,200,50
-Consumables & Extra,Out Door Collection,100/200/500,0
-Consumables & Extra,Each Film,500,100
-Consumables & Extra,HSG Doctor Charge,1200,300
-Consumables & Extra,CT Contrast,1300/2500,500
-Consumables & Extra,MRI Contrast,2500,800
-Consumables & Extra,Extra Screening Charge,2000,0
-Consumables & Extra,Biopsy Doctor Charge,600,200
-Consumables & Extra,Douche Charge,200,50
-Consumables & Extra,Sterile C/S Container,30,10
+﻿Test name,Category,"Popular Diagnostic rate (BDT, photo)",Government rate (BDT),Why the test is done (general information),Government rate source/note,Medical information source
+CBC,Pathology,400,150,"রক্তস্বল্পতা, সংক্রমণ, প্রদাহ ও রক্তকণিকার অবস্থা মূল্যায়নে",https://kushtiatown.com/en/public-services/473-kushtia-general-hospital (online listing; confirm current fee with hospital),https://medlineplus.gov/lab-tests/
+ESR,Pathology,200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,শরীরে প্রদাহের ইঙ্গিত মূল্যায়নে; নির্দিষ্ট রোগ একা নিশ্চিত করে না,,https://medlineplus.gov/lab-tests/
+D-dimer,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"রক্ত জমাট/থ্রম্বোসিসের সন্দেহে, চিকিৎসকের মূল্যায়নের সঙ্গে",,https://medlineplus.gov/lab-tests/
+ALP/ALT/AST,Pathology,500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,যকৃত ও পিত্তনালি/হাড়-সম্পর্কিত সমস্যা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Amylase/eGFR (MDRD),Pathology,1300,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,অ্যামাইলেজে অগ্ন্যাশয়; eGFR-এ কিডনির ছাঁকন ক্ষমতা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Bilirubin Total,Pathology,300,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,জন্ডিস বা যকৃত/পিত্তনালির সমস্যার মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Bilirubin Direct/Indirect,Pathology,500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,জন্ডিসের ধরন ও বিলিরুবিন বৃদ্ধির কারণ অনুসন্ধানে,,https://medlineplus.gov/lab-tests/
+Blood Group & Rh,Pathology,200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"রক্ত সঞ্চালন, গর্ভাবস্থা বা অস্ত্রোপচারের আগে রক্তের গ্রুপ নির্ধারণে",,https://medlineplus.gov/lab-tests/
+BNP/NT-proBNP,Pathology,3000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,শ্বাসকষ্টে হার্ট ফেইলিউরের সম্ভাবনা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Total Cholesterol,Pathology,400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হৃদ্‌রোগের ঝুঁকি মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+CPK/Fluid for ADA/Iron,Pathology,1400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,পেশির ক্ষতি/শরীরের তরলে যক্ষ্মার সম্ভাবনা/আয়রন অবস্থা—নির্বাচিত পরীক্ষার জন্য,,https://medlineplus.gov/lab-tests/
+Creatinine Clearance Rate,Pathology,1100,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,কিডনির ছাঁকন ক্ষমতা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+FBS/RBS,Pathology,200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,রক্তে গ্লুকোজ ও ডায়াবেটিস শনাক্ত/পর্যবেক্ষণে,,https://medlineplus.gov/lab-tests/
+Fluid for Biochemical Test,Pathology,1000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,শরীরের সংগৃহীত তরলের রাসায়নিক উপাদান ও সম্ভাব্য কারণ মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+2-hour ABF glucose,Pathology,200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,খাবারের পর রক্তে গ্লুকোজ নিয়ন্ত্রণ মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+GGT,Pathology,200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,যকৃত/পিত্তনালির সমস্যা ও কিছু ওষুধ/অ্যালকোহলজনিত প্রভাব মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+DHEA-SO4,Pathology,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,অ্যাড্রিনাল হরমোনের ভারসাম্য/অতিরিক্ত অ্যান্ড্রোজেন মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Hb Electrophoresis,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,থ্যালাসেমিয়া ও অন্যান্য হিমোগ্লোবিনের ধরন শনাক্তে,,https://medlineplus.gov/lab-tests/
+HDL/LDL Cholesterol,Pathology,2000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,রক্তের চর্বি ও হৃদ্‌রোগের ঝুঁকি মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Dengue NS1/ICT IgG IgM,Pathology,400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ডেঙ্গু সংক্রমণের পর্যায় অনুযায়ী অ্যান্টিজেন/অ্যান্টিবডি শনাক্তে,,https://medlineplus.gov/lab-tests/
+Anti-CCP,Pathology,1800,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,রিউমাটয়েড আর্থ্রাইটিসের সম্ভাবনা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Lipid Profile/Lactate/LDH/Lipase,Pathology,1400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"চর্বি, টিস্যু ক্ষতি বা অগ্ন্যাশয়-সম্পর্কিত সমস্যা—কোন উপপরীক্ষা চাওয়া হয়েছে তার ওপর",,https://medlineplus.gov/lab-tests/
+Liver Function Test,Pathology,1000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,যকৃতের কার্যকারিতা ও আঘাত/প্রদাহ মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Microalbumin Creatinine Ratio,Pathology,1300,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,বিশেষত ডায়াবেটিস/উচ্চ রক্তচাপে কিডনির প্রাথমিক ক্ষতির ইঙ্গিত খুঁজতে,,https://medlineplus.gov/lab-tests/
+Glucose 1hr after 50g,Pathology,250,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,গর্ভাবস্থায় গর্ভকালীন ডায়াবেটিসের প্রাথমিক স্ক্রিনিংয়ে,,https://medlineplus.gov/lab-tests/
+Glucose 1hr after 75g,Pathology,250,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,গ্লুকোজ গ্রহণের পর রক্তে শর্করার প্রতিক্রিয়া মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+OGTT,Pathology,750,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ডায়াবেটিস বা গর্ভকালীন ডায়াবেটিস নির্ণয়ে,,https://medlineplus.gov/lab-tests/
+Pleural Fluid Biochemistry,Pathology,1000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ফুসফুসের আবরণে জমা তরলের কারণ অনুসন্ধানে,,https://medlineplus.gov/lab-tests/
+Protein Electrophoresis,Pathology,1600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,রক্তের প্রোটিনের ধরন ও অস্বাভাবিক প্রোটিন মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+PT/INR,Pathology,800,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,রক্ত জমাট বাঁধার ক্ষমতা ও ওয়ারফারিন চিকিৎসা পর্যবেক্ষণে,,https://medlineplus.gov/lab-tests/
+PBF/Cell Morphology,Pathology,400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,রক্তকণিকার আকৃতি দেখে রক্তস্বল্পতা/রক্তরোগের সূত্র খুঁজতে,,https://medlineplus.gov/lab-tests/
+Serum Albumin/Calcium,Pathology,600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,পুষ্টি/যকৃত/কিডনি ও ক্যালসিয়াম-হাড়ের ভারসাম্য মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Serum Creatinine,Pathology,400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,কিডনির কার্যকারিতা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Serum Electrolytes,Pathology,1000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,সোডিয়াম-পটাশিয়ামসহ শরীরের লবণ ও তরল ভারসাম্য মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Uric Acid/Inorganic Phosphate,Pathology,600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,গাউট/কিডনি ও খনিজের ভারসাম্য মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Urine Routine Examination,Pathology,400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"মূত্রনালির সংক্রমণ, কিডনি সমস্যা, রক্ত/প্রোটিন/গ্লুকোজের ইঙ্গিত খুঁজতে",,https://medlineplus.gov/lab-tests/
+Spot Urine Protein Creatinine,Pathology,1100,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,প্রস্রাবে প্রোটিন ক্ষরণ ও কিডনির ক্ষতি মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Stool R/E,Pathology,300,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"ডায়রিয়া, পরজীবী, রক্ত বা হজমজনিত সমস্যার সূত্র খুঁজতে",,https://medlineplus.gov/lab-tests/
+TIBC,Pathology,1400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,আয়রন ঘাটতি বা আয়রন বিপাকের সমস্যা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Urea,Pathology,500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,কিডনির কার্যকারিতা ও বর্জ্য পদার্থের মাত্রা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Stool Occult Blood,Pathology,400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,মলে চোখে না দেখা রক্ত খুঁজতে,,https://medlineplus.gov/lab-tests/
+Tuberculin Test,Pathology,700,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,যক্ষ্মার জীবাণুর সংস্পর্শ/সংক্রমণের প্রমাণ খুঁজতে,,https://medlineplus.gov/lab-tests/
+Urine Ketone Bodies,Pathology,400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ডায়াবেটিসে কিটোঅ্যাসিডোসিস বা দীর্ঘ উপবাস/বমিতে কিটোন যাচাইয়ে,,https://medlineplus.gov/lab-tests/
+Ascitic Fluid for Malignant,Pathology,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,পেটে জমা তরলে ক্যান্সার কোষের সম্ভাবনা পরীক্ষা করতে,,https://medlineplus.gov/lab-tests/
+FNAC (Normal),Pathology,1000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,গুটি/পিণ্ডের কোষ নিয়ে কারণ নির্ণয়ে,,https://medlineplus.gov/lab-tests/
+17-OH Progesterone,Pathology,2500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,জন্মগত অ্যাড্রিনাল হাইপারপ্লাসিয়া/হরমোনজনিত সমস্যার মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Alpha Fetoprotein,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,নির্বাচিত লিভার/জার্ম-সেল ক্যান্সারে সহায়ক মার্কার; একা ক্যান্সার নির্ণয় নয়,,https://medlineplus.gov/lab-tests/
+Anti-HAV IgM/Anti-HBc IgM,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,সাম্প্রতিক হেপাটাইটিস A বা B সংক্রমণের প্রমাণ খুঁজতে,,https://medlineplus.gov/lab-tests/
+Anti-HBc,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হেপাটাইটিস বি সংক্রমণের বর্তমান/পূর্ব সংস্পর্শ মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Anti-HBe/Anti-HBs/Anti-HCV,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হেপাটাইটিস বি-র রোগপ্রতিরোধ/সংক্রমণ পর্যায় বা হেপাটাইটিস C সংস্পর্শ যাচাইয়ে,,https://medlineplus.gov/lab-tests/
+Anti-Thyroid Ab,Pathology,2500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,অটোইমিউন থাইরয়েড রোগের সম্ভাবনা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+AMH,Pathology,4000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ডিম্বাশয়ের ডিম্বাণু-সংরক্ষণ/প্রজনন মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+ANA/Anti-TGAb,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,অটোইমিউন রোগ বা থাইরয়েড অটোইমিউনিটির সূত্র খুঁজতে,,https://medlineplus.gov/lab-tests/
+Urine Drug Test,Pathology,3500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,প্রস্রাবে নির্দিষ্ট মাদক/ওষুধের উপস্থিতি শনাক্তে,,https://medlineplus.gov/lab-tests/
+CA125/CA15-3/CA19-9/C-ANCA,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,টিউমার মার্কার বা অটোইমিউন রোগের মূল্যায়ন; উপপরীক্ষা অনুযায়ী,,https://medlineplus.gov/lab-tests/
+Troponin-I,Pathology,1400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হার্টের পেশির ক্ষতি/হার্ট অ্যাটাক মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+High Sensitivity Troponin-I,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হার্টের পেশির সাম্প্রতিক ক্ষতি দ্রুত মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Urine Pregnancy Test,Pathology,300,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,গর্ভধারণের হরমোন শনাক্তে,,https://medlineplus.gov/lab-tests/
+CMV IgG/IgM,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,সাইটোমেগালোভাইরাস সংক্রমণ বা পূর্ব সংস্পর্শ যাচাইয়ে,,https://medlineplus.gov/lab-tests/
+Cervical Smear Cytology,Pathology,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,জরায়ুমুখের অস্বাভাবিক/ক্যান্সার-পূর্ব কোষ স্ক্রিনিংয়ে,,https://medlineplus.gov/lab-tests/
+Cortisol,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,অ্যাড্রিনাল/পিটুইটারি হরমোনের ভারসাম্য মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Estradiol E2,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,প্রজনন/মাসিক/ডিম্বাশয়ের হরমোন মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Folate/Folic Acid,Pathology,1600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ফোলেট ঘাটতি ও কিছু ধরনের রক্তস্বল্পতা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+FT3/FT4/FSH/LH,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,থাইরয়েড বা প্রজনন হরমোনের ভারসাম্য যাচাইয়ে,,https://medlineplus.gov/lab-tests/
+Free Testosterone,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,অ্যান্ড্রোজেনের মাত্রা/হরমোনজনিত উপসর্গ মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Beta-hCG/Free PSA,Pathology,2000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,গর্ভাবস্থা/নির্বাচিত টিউমার মার্কার বা প্রোস্টেট মূল্যায়ন—পরীক্ষা ভেদে,,https://medlineplus.gov/lab-tests/
+Rubella IgM/IgG,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,রুবেলা সংক্রমণ বা রোগপ্রতিরোধ যাচাইয়ে,,https://medlineplus.gov/lab-tests/
+Insulin/PTH/PP/Fasting,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"ইনসুলিন, ক্যালসিয়াম-হাড়ের প্যারাথাইরয়েড হরমোন বা খাবার-পরবর্তী পরীক্ষা—নির্দেশ অনুযায়ী",,https://medlineplus.gov/lab-tests/
+Prolactin/Testosterone/Progesterone/PSA,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"প্রজনন, পিটুইটারি বা প্রোস্টেট-সম্পর্কিত হরমোন/মার্কার মূল্যায়নে",,https://medlineplus.gov/lab-tests/
+H. pylori IgG/Antibody,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,H. pylori সংক্রমণের সংস্পর্শের প্রমাণ খুঁজতে,,https://medlineplus.gov/lab-tests/
+HbA1c/HBeAg/HIV-1&2,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,দীর্ঘমেয়াদি গ্লুকোজ নিয়ন্ত্রণ বা হেপাটাইটিস বি/HIV স্ক্রিনিং—নির্বাচিত পরীক্ষা,,https://medlineplus.gov/lab-tests/
+HBsAg,Pathology,700,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হেপাটাইটিস বি সংক্রমণের স্ক্রিনিংয়ে,,https://medlineplus.gov/lab-tests/
+Urine/Skin for C/S,Pathology,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,সংক্রমণকারী জীবাণু শনাক্ত ও কোন অ্যান্টিবায়োটিক কাজ করতে পারে তা জানতে,,https://medlineplus.gov/lab-tests/
+HBV DNA Quantitative,Pathology,7000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,রক্তে হেপাটাইটিস বি ভাইরাসের পরিমাণ ও চিকিৎসার প্রতিক্রিয়া মাপতে,,https://medlineplus.gov/lab-tests/
+HCV RNA Quantitative PCR,Pathology,12000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হেপাটাইটিস C ভাইরাস সক্রিয় আছে কি না ও পরিমাণ নির্ণয়ে,,https://medlineplus.gov/lab-tests/
+Procalcitonin,Pathology,12000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,গুরুতর ব্যাকটেরিয়াল সংক্রমণ/সেপসিসের সম্ভাবনা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Intact PTH/LH/P-ANCA/Copper/Total HCG,Pathology,12000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"হরমোন, অটোইমিউন বা ধাতু/গর্ভাবস্থা মূল্যায়ন—নির্বাচিত পরীক্ষা",,https://medlineplus.gov/lab-tests/
+Total IgE/SHBG,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,অ্যালার্জি প্রবণতা বা যৌন হরমোন-বহনকারী প্রোটিন মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Complement C3/C4/CSF Analysis,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ইমিউন সিস্টেম/প্রদাহ বা মস্তিষ্ক-মেরুর তরল মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Interleukin-6,Pathology,2200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,প্রদাহজনিত প্রতিক্রিয়া/গুরুতর সংক্রমণের মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Vitamin D (25-OH),Pathology,4000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ভিটামিন D ও হাড়ের স্বাস্থ্য মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Vitamin D2-D3,Pathology,6000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ভিটামিন D-এর ধরন/মাত্রা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Vitamin B12,Pathology,2500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"B12 ঘাটতি, স্নায়বিক উপসর্গ বা রক্তস্বল্পতা মূল্যায়নে",,https://medlineplus.gov/lab-tests/
+VDRL/Widal,Pathology,600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,সিফিলিস স্ক্রিনিং বা টাইফয়েডের সহায়ক পরীক্ষা—ক্লিনিক্যাল প্রসঙ্গসহ,,https://medlineplus.gov/lab-tests/
+Ascitic Fluid C/S,Pathology,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,পেটের তরলে সংক্রমণকারী জীবাণু ও কার্যকর অ্যান্টিবায়োটিক শনাক্তে,,https://medlineplus.gov/lab-tests/
+Ascitic Fluid Cytology,Pathology,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,পেটের তরলে অস্বাভাবিক/ক্যান্সার কোষ খুঁজতে,,https://medlineplus.gov/lab-tests/
+Blood C/S Anaerobic,Pathology,2500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,রক্তে অক্সিজেন ছাড়া বাড়ে এমন জীবাণু শনাক্তে,,https://medlineplus.gov/lab-tests/
+Blood C/S,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,রক্তপ্রবাহের সংক্রমণকারী জীবাণু শনাক্তে,,https://medlineplus.gov/lab-tests/
+ICT Filaria/Kala-azar/Malaria,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"ফাইলেরিয়া, কালাজ্বর বা ম্যালেরিয়ার দ্রুত স্ক্রিনিংয়ে",,https://medlineplus.gov/lab-tests/
+ICT Tuberculosis,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,যক্ষ্মা সংক্রমণের দ্রুত পরীক্ষায়,,https://medlineplus.gov/lab-tests/
+Pus/Sputum/Stool C/S,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,পুঁজ/কফ/মলে জীবাণু শনাক্ত ও অ্যান্টিবায়োটিক সংবেদনশীলতা জানতে,,https://medlineplus.gov/lab-tests/
+RA Test (Titre),Pathology,1200,60,রিউমাটয়েড ফ্যাক্টর-সম্পর্কিত রোগের মূল্যায়নে,https://kushtiatown.com/en/public-services/473-kushtia-general-hospital (online listing; confirm current fee with hospital),https://medlineplus.gov/lab-tests/
+RH Antibody Anti-D,Pathology,700,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,গর্ভাবস্থায় Rh অসামঞ্জস্য/Anti-D অ্যান্টিবডি যাচাইয়ে,,https://medlineplus.gov/lab-tests/
+Semen Analysis,Pathology,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,শুক্রাণুর সংখ্যা/গতি/আকৃতি দেখে পুরুষ প্রজননক্ষমতা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Toxo IgG/IgM,Pathology,1000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,টক্সোপ্লাজমা সংক্রমণ বা পূর্ব সংস্পর্শ যাচাইয়ে,,https://medlineplus.gov/lab-tests/
+TSH receptor antibodies,Pathology,3000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,গ্রেভস রোগ/অটোইমিউন থাইরয়েড সমস্যার মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+T3/T4/TSH,Pathology,800,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,থাইরয়েড গ্রন্থির কার্যকারিতা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Growth Hormone,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,শিশুর বৃদ্ধি বা অতিরিক্ত GH-জনিত সমস্যার মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+H. pylori Antibody,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,H. pylori সংক্রমণের সংস্পর্শের সূত্র খুঁজতে,,https://medlineplus.gov/lab-tests/
+HSV1/HSV2 IgG/IgM,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হার্পিস ভাইরাস সংক্রমণ/পূর্ব সংস্পর্শের প্রমাণ খুঁজতে,,https://medlineplus.gov/lab-tests/
+C-Peptide,Pathology,1800,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,শরীরের নিজস্ব ইনসুলিন উৎপাদন মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Measles IgG/IgM,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হাম সংক্রমণ বা রোগপ্রতিরোধ যাচাইয়ে,,https://medlineplus.gov/lab-tests/
+HOMA-IR,Pathology,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ইনসুলিন রেজিস্ট্যান্সের আনুমানিক মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+CT Scan Brain,CT,3600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"মাথায় আঘাত, স্ট্রোক, রক্তক্ষরণ, ու tumor/වෙනත් structural সমস্যা মূল্যায়নে",,https://www.radiologyinfo.org/en/info/bodyct
+CT Chest HRCT,CT,6000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ফুসফুসের সূক্ষ্ম গঠন/ইন্টারস্টিশিয়াল রোগ বা সংক্রমণ মূল্যায়নে,,https://www.radiologyinfo.org/en/info/bodyct
+CT Whole Abdomen,CT,12000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"পেটের অঙ্গ, ব্যথা, আঘাত বা গাঁট/পাথর মূল্যায়নে",,https://www.radiologyinfo.org/en/info/bodyct
+CT KUB,CT,12000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,কিডনি-ইউরেটার-মূত্রথলির পাথর/সমস্যা খুঁজতে,,https://www.radiologyinfo.org/en/info/bodyct
+CT Angio Brain,CT,12000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,মস্তিষ্কের রক্তনালি সংকোচন/অ্যানিউরিজম/রক্তপ্রবাহ মূল্যায়নে,,https://www.radiologyinfo.org/en/info/bodyct
+CT Abdominal Angiogram,CT,14000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,পেটের প্রধান রক্তনালির রোগ/রক্তপ্রবাহ মূল্যায়নে,,https://www.radiologyinfo.org/en/info/bodyct
+CT Angio Brain & Neck Vessel,CT,15000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,মস্তিষ্ক ও ঘাড়ের রক্তনালি মূল্যায়নে,,https://www.radiologyinfo.org/en/info/bodyct
+CT Left Ankle/Elbow/Foot,CT,6500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হাড়-জয়েন্টের জটিল আঘাত বা গঠন বিস্তারিত দেখতে,,https://www.radiologyinfo.org/en/info/bodyct
+CT Orbits,CT,6000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,চোখের কোটর/চোখের আশপাশের হাড় ও টিস্যু মূল্যায়নে,,https://www.radiologyinfo.org/en/info/bodyct
+MRI/MRA Brain,MRI,10000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,মস্তিষ্কের টিস্যু ও প্রয়োজনে রক্তনালি মূল্যায়নে,,https://www.radiologyinfo.org/en/info/mribrain
+MRI Brain,MRI,10000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"মাথাব্যথা, খিঁচুনি, স্ট্রোক, টিউমার বা স্নায়বিক সমস্যার কারণ খুঁজতে",,https://www.radiologyinfo.org/en/info/mribrain
+MRI Lumbo Sacral Spine,MRI,7000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"কোমরব্যথা, ডিস্ক/স্নায়ু চাপ বা মেরুদণ্ডের সমস্যা দেখতে",,https://www.radiologyinfo.org/en/info/mribrain
+MRI Dorsal/Cervical Spine,MRI,7000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"ঘাড়/বুকের মেরুদণ্ড, ডিস্ক ও স্নায়ুর সমস্যা মূল্যায়নে",,https://www.radiologyinfo.org/en/info/mribrain
+MRI Dorsal Lumbar Spine,MRI,14000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,বুক-কোমর মেরুদণ্ডের বিস্তৃত সমস্যা দেখতে,,https://www.radiologyinfo.org/en/info/mribrain
+MRI MRS Brain,MRI,10000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,মস্তিষ্কের নির্দিষ্ট টিস্যুর রাসায়নিক বৈশিষ্ট্য মূল্যায়নে,,https://www.radiologyinfo.org/en/info/mribrain
+MRI MRV Brain,MRI,10000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,মস্তিষ্কের শিরার রক্তপ্রবাহ/রক্তজমাট মূল্যায়নে,,https://www.radiologyinfo.org/en/info/mribrain
+MRI SI Joint,MRI,8500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,স্যাক্রোইলিয়াক জয়েন্টের প্রদাহ/আঘাত মূল্যায়নে,,https://www.radiologyinfo.org/en/info/mribrain
+MRI Left/Right Knee,MRI,8500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"হাঁটুর লিগামেন্ট, মেনিস্কাস, কার্টিলেজ বা আঘাত দেখতে",,https://www.radiologyinfo.org/en/info/mribrain
+MRCP,MRI,8000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,পিত্তনালি ও অগ্ন্যাশয় নালির পাথর/সংকোচন মূল্যায়নে,,https://www.radiologyinfo.org/en/info/mribrain
+MRCP with CT Scan,MRI/CT,10000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,পিত্তনালি-প্যানক্রিয়াস ও আশপাশের অঙ্গ বিস্তারিত মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Echo Color Doppler,Other,3000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"হৃদ্‌যন্ত্রের গঠন, পাম্পিং ও রক্তপ্রবাহ মূল্যায়নে",,https://medlineplus.gov/lab-tests/
+Echo 2D,Other,1600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হৃদ্‌যন্ত্রের গঠন ও পাম্পিং ক্ষমতা দেখতে,,https://medlineplus.gov/lab-tests/
+ECG,Other,400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হৃদ্‌যন্ত্রের বৈদ্যুতিক ছন্দ/হার্ট অ্যাটাকের ইঙ্গিত মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Fiber Optic Laryngoscopy,Other,2000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,গলা/স্বরযন্ত্রের ভেতর দেখে কণ্ঠস্বর বা শ্বাসের সমস্যার কারণ খুঁজতে,,https://medlineplus.gov/lab-tests/
+Video Endoscopy,Other,2500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"খাদ্যনালি, পাকস্থলী ও ওপরের অন্ত্রের সমস্যা দেখতে",,https://medlineplus.gov/lab-tests/
+Full Video Colonoscopy,Other,6000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"বৃহদান্ত্রের রক্তপাত, প্রদাহ, পলিপ বা ক্যান্সার স্ক্রিনিং/মূল্যায়নে",,https://medlineplus.gov/lab-tests/
+Short Video Colonoscopy,Other,4000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,বৃহদান্ত্রের নির্বাচিত অংশের সমস্যা দেখতে,,https://medlineplus.gov/lab-tests/
+ETT,Other,2800,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ব্যায়ামে হৃদ্‌যন্ত্রের রক্ত সরবরাহ/ইস্কেমিয়ার ইঙ্গিত মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Digital EEG,Other,3000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,খিঁচুনি বা মস্তিষ্কের বৈদ্যুতিক কার্যকলাপ মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Uroflowmetry,Other,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,প্রস্রাবের প্রবাহের গতি মেপে মূত্রনালির বাধা/প্রোস্টেট সমস্যা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Pulmonary Function Test,Other,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ফুসফুসের বায়ু চলাচল ও শ্বাসের ক্ষমতা মূল্যায়নে,,https://medlineplus.gov/lab-tests/
+Fibroscan,Other,4000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,যকৃতের শক্তভাব/ফাইব্রোসিস ও চর্বি জমার মাত্রা অনুমান করতে,,https://medlineplus.gov/lab-tests/
+USG Pregnancy Profile,Ultrasound,1600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,গর্ভাবস্থার অগ্রগতি ও ভ্রূণের অবস্থা মূল্যায়নে,,https://www.radiologyinfo.org/en/info/abdominus
+USG Pregnancy,Ultrasound,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,গর্ভাবস্থার অবস্থান/বয়স ও ভ্রূণের বৃদ্ধি দেখতে,,https://www.radiologyinfo.org/en/info/abdominus
+USG KUB,Ultrasound,1400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"কিডনি, ইউরেটার ও মূত্রথলি মূল্যায়নে",,https://www.radiologyinfo.org/en/info/abdominus
+USG Both Breast,Ultrasound,2400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,স্তনে গুটি/ব্যথা বা অস্বাভাবিকতা মূল্যায়নে,,https://www.radiologyinfo.org/en/info/abdominus
+USG Brain,Ultrasound,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,বিশেষত শিশুর মাথার নরম অংশ দিয়ে মস্তিষ্কের গঠন দেখতে,,https://www.radiologyinfo.org/en/info/abdominus
+USG Folliculometry,Ultrasound,1800,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ডিম্বাণু/ফলিকলের বৃদ্ধি ও ডিম্বস্ফোটনের সময় পর্যবেক্ষণে,,https://www.radiologyinfo.org/en/info/abdominus
+USG KUB & PVR,Ultrasound,1700,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,মূত্রতন্ত্র ও প্রস্রাবের পর অবশিষ্ট মূত্র মাপতে,,https://www.radiologyinfo.org/en/info/abdominus
+USG Lower Abdomen,Ultrasound,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,তলপেটের অঙ্গ/ব্যথার কারণ মূল্যায়নে,,https://www.radiologyinfo.org/en/info/abdominus
+USG Foetal Anomaly Scan,Ultrasound,2500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ভ্রূণের অঙ্গ-প্রত্যঙ্গের গঠনগত অস্বাভাবিকতা খুঁজতে,,https://www.radiologyinfo.org/en/info/abdominus
+USG Foetal Anomaly Twin,Ultrasound,4000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,যমজ ভ্রূণের গঠনগত অস্বাভাবিকতা মূল্যায়নে,,https://www.radiologyinfo.org/en/info/abdominus
+USG Neck,Ultrasound,2000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ঘাড়ের থাইরয়েড/লিম্ফ নোড বা গুটি মূল্যায়নে,,https://www.radiologyinfo.org/en/info/abdominus
+USG Scrotum/Testes,Ultrasound,1700,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"অণ্ডকোষের ব্যথা, গুটি বা ফোলা মূল্যায়নে",,https://www.radiologyinfo.org/en/info/abdominus
+USG Thyroid,Ultrasound,1600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"থাইরয়েডের আকার, গুটি বা গঠন মূল্যায়নে",,https://www.radiologyinfo.org/en/info/abdominus
+USG Transvaginal/TVS,Ultrasound,1500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,জরায়ু-ডিম্বাশয় ও প্রাথমিক গর্ভাবস্থা বিস্তারিত দেখতে,,https://www.radiologyinfo.org/en/info/abdominus
+USG Upper Abdomen,Ultrasound,1400,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"যকৃত, পিত্তথলি, অগ্ন্যাশয় ও ওপরের পেটের অঙ্গ দেখতে",,https://www.radiologyinfo.org/en/info/abdominus
+USG Whole Abdomen,Ultrasound,1600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,পেটের বিভিন্ন অঙ্গ ও ব্যথার কারণ মূল্যায়নে,,https://www.radiologyinfo.org/en/info/abdominus
+USG Whole Abdomen & PVR,Ultrasound,1700,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,পেটের অঙ্গের সঙ্গে মূত্রত্যাগের পর অবশিষ্ট মূত্র দেখতে,,https://www.radiologyinfo.org/en/info/abdominus
+USG Whole Abdomen & MCC & PVR,Ultrasound,1800,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,মূত্রথলির ধারণক্ষমতা/অবশিষ্ট মূত্রসহ পেটের অঙ্গ মূল্যায়নে,,https://www.radiologyinfo.org/en/info/abdominus
+USG KUB MCC & PVR,Ultrasound,1700,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"মূত্রতন্ত্র, ধারণক্ষমতা ও প্রস্রাব-পরবর্তী অবশিষ্ট মূত্র দেখতে",,https://www.radiologyinfo.org/en/info/abdominus
+Duplex Both Limb Vessels,Ultrasound,8000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হাত/পায়ের রক্তনালির রক্তপ্রবাহ ও জমাট মূল্যায়নে,,https://www.radiologyinfo.org/en/info/abdominus
+Duplex Penile Vessels,Ultrasound,4000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,লিঙ্গের রক্তপ্রবাহ মূল্যায়নে,,https://www.radiologyinfo.org/en/info/abdominus
+USG Guided FNAC,Ultrasound,3700,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,আল্ট্রাসাউন্ড নির্দেশনায় গুটি থেকে কোষের নমুনা নিতে,,https://www.radiologyinfo.org/en/info/abdominus
+Saline Infusion Sonogram,Ultrasound,2500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,জরায়ুর গহ্বরের পলিপ/ফাইব্রয়েড বা বন্ধ্যত্বের কারণ দেখতে,,https://www.radiologyinfo.org/en/info/abdominus
+Digital Chest X-ray PA,X-ray,600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"ফুসফুস, হৃদ্‌যন্ত্রের আকার বা বক্ষের সমস্যা মূল্যায়নে",,https://www.radiologyinfo.org/en/info/xray
+X-ray Both Ankle B/V,X-ray,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,গোড়ালির হাড়/জয়েন্টের আঘাত বা ব্যথা দেখতে,,https://www.radiologyinfo.org/en/info/xray
+X-ray Both Feet B/V,X-ray,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,পায়ের হাড়ের ভাঙন/বিকৃতি মূল্যায়নে,,https://www.radiologyinfo.org/en/info/xray
+X-ray Both Hand B/V,X-ray,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হাতের হাড় ও জয়েন্টের আঘাত/ব্যথা দেখতে,,https://www.radiologyinfo.org/en/info/xray
+X-ray Both Knee AP & Lateral,X-ray,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হাঁটুর হাড়/জয়েন্টের আঘাত বা ক্ষয় মূল্যায়নে,,https://www.radiologyinfo.org/en/info/xray
+X-ray Cervical Spine AP & Lateral,X-ray,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ঘাড়ের মেরুদণ্ডের হাড়/বিকৃতি মূল্যায়নে,,https://www.radiologyinfo.org/en/info/xray
+X-ray Dorsal Spine AP & Lateral,X-ray,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,বুকের মেরুদণ্ডের হাড়/আঘাত দেখতে,,https://www.radiologyinfo.org/en/info/xray
+X-ray IVU,X-ray,2500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,কিডনি-ইউরেটার-মূত্রথলির গঠন ও প্রস্রাব নির্গমন দেখতে,,https://www.radiologyinfo.org/en/info/xray
+X-ray Left Forearm AP & Lateral,X-ray,800,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হাতের নিচের অংশের হাড়ের আঘাত/ভাঙন দেখতে,,https://www.radiologyinfo.org/en/info/xray
+X-ray Left Leg AP & Lateral,X-ray,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,পায়ের হাড়ের আঘাত/ভাঙন মূল্যায়নে,,https://www.radiologyinfo.org/en/info/xray
+X-ray Lumbosacral Spine,X-ray,600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,কোমরের মেরুদণ্ডের হাড়/বিকৃতি মূল্যায়নে,,https://www.radiologyinfo.org/en/info/xray
+X-ray Mastoid Towns View,X-ray,600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,কানের পেছনের মাস্টয়েড হাড়ের নির্বাচিত সমস্যা দেখতে,,https://www.radiologyinfo.org/en/info/xray
+X-ray Micturating Cystogram,X-ray,3000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,প্রস্রাবের সময় মূত্রথলি ও রিফ্লাক্স/প্রবাহ সমস্যা মূল্যায়নে,,https://www.radiologyinfo.org/en/info/xray
+X-ray PNS OM/Lateral,X-ray,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,সাইনাসের নির্বাচিত সমস্যা মূল্যায়নে,,https://www.radiologyinfo.org/en/info/xray
+X-ray Skull AP,X-ray,600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,মাথার খুলির হাড়/আঘাত মূল্যায়নে,,https://www.radiologyinfo.org/en/info/xray
+X-ray KUB AP,X-ray,600,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,কিডনি-ইউরেটার-মূত্রথলির পাথরের সম্ভাবনা দেখতে,,https://www.radiologyinfo.org/en/info/xray
+Digital OPG,X-ray,500,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,চোয়াল ও দাঁতের সারির প্যানোরামিক ছবি নিতে,,https://www.radiologyinfo.org/en/info/xray
+BMD,X-ray,3000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,হাড়ের ঘনত্ব/অস্টিওপোরোসিস ও ভাঙার ঝুঁকি মূল্যায়নে,,https://www.radiologyinfo.org/en/info/xray
+Digital MCUG,X-ray,3000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,প্রস্রাবের সময় মূত্রথলি ও মূত্রনালির গঠন/রিফ্লাক্স দেখতে,,https://www.radiologyinfo.org/en/info/xray
+Digital Ba-meal/Follow Through,X-ray,3000,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,খাদ্যনালি- পাকস্থলী-অন্ত্রের গঠন ও চলাচল দেখতে,,https://www.radiologyinfo.org/en/info/xray
+Digital Barium Swallow,X-ray,2800,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,"গিলতে অসুবিধা, খাদ্যনালি ও হায়াটাস হার্নিয়া মূল্যায়নে",,https://www.radiologyinfo.org/en/info/xray
+X-ray Both Shoulder B/V,X-ray,2200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,কাঁধের হাড়/জয়েন্টের ব্যথা বা আঘাত দেখতে,,https://www.radiologyinfo.org/en/info/xray
+X-ray Dorsolumbar Spine AP & Lateral,X-ray,1200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,বুক-কোমরের সংযোগস্থলের মেরুদণ্ড মূল্যায়নে,,https://www.radiologyinfo.org/en/info/xray
+X-ray Fistulogram,X-ray,2200,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,ফিস্টুলার পথ ও সংযোগ নির্ণয়ে,,https://www.radiologyinfo.org/en/info/xray
+X-ray T-tube Cholangiogram,X-ray,2800,প্রকাশ্য নির্ভরযোগ্য কুষ্টিয়া সরকারি রেট পাওয়া যায়নি,অস্ত্রোপচারের পর পিত্তনালির পথ/বাধা মূল্যায়নে,,https://www.radiologyinfo.org/en/info/xray

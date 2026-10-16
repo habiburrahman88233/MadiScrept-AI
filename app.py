@@ -28,7 +28,7 @@ st.markdown(
 
 st.markdown(
     """<div class="brand-head" id="home">
-      <a class="brand-home" href="?page=Prescription#home" title="Home / মূল পৃষ্ঠা" aria-label="MediScript AI home">
+      <a class="brand-home" href="?page=Doctor%20directory#home" title="Home / মূল পৃষ্ঠা" aria-label="MediScript AI home">
       <div class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true">
         <path d="M8 4v8a8 8 0 0 0 16 0V4M8 4H5v4m19-4h3v4M16 20v2a5 5 0 0 0 10 0v-1" />
         <circle cx="26" cy="19" r="2.5" /><path d="M5 4h6M21 4h6" />
@@ -40,9 +40,9 @@ st.markdown(
 )
 
 # Query parameter lets the linked brand return to the app's opening page.
-pages = ["Prescription", "Doctor directory", "About"]
+pages = ["Doctor directory", "Prescription", "About"]
 try:
-    requested_page = st.query_params.get("page", "Prescription")
+    requested_page = st.query_params.get("page", "Doctor directory")
 except Exception:
     requested_page = "Prescription"
 if requested_page in pages and requested_page != st.session_state.get("_nav_query_page"):
@@ -59,10 +59,10 @@ try:
 except Exception:
     pass
 
-if selected_page == "Prescription":
-    render_decoder_page(SYSTEM_GEMINI_KEY)
-elif selected_page == "Doctor directory":
+if selected_page == "Doctor directory":
     render_doctors_page()
+elif selected_page == "Prescription":
+    render_decoder_page(SYSTEM_GEMINI_KEY)
 else:
     render_about_page()
 

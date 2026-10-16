@@ -2,5 +2,6 @@ streamlit>=1.37
 google-genai
 python-dotenv
 pillow
-reportlab
+reportlab>=4.4.0
+uharfbuzz>=0.39
 rapidfuzz

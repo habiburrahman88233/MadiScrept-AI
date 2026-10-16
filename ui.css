@@ -138,12 +138,14 @@ div[role="dialog"] {
 .clinical-note span { display: block; margin-bottom: 3px; color: var(--muted); font-size: 10px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
 .price-line, .detail-line { display: flex; align-items: baseline; gap: 8px; margin: 9px 0; color: #52627a; font-size: 15px; line-height: 1.55; }
 .price-line b { color: var(--teal-dark); }
-.alternative-list { display: grid; gap: 7px; margin-top: 8px; }
-.alternative-card { padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
-.alternative-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
-.alternative-name { color: var(--ink); font-size: 15px; font-weight: 750; }
-.alternative-price { flex: 0 1 58%; color: var(--teal-dark); font-size: 14px; font-weight: 700; text-align: right; overflow-wrap: anywhere; }
-.alternative-meta { margin-top: 3px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.alternative-list { display: grid; gap: 7px; margin-top: 8px; min-width: 0; max-width: 100%; }
+.alternative-card { box-sizing: border-box; min-width: 0; max-width: 100%; padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; background: #fff; overflow-wrap: anywhere; }
+.alternative-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 4px 8px; min-width: 0; max-width: 100%; }
+.alternative-name { min-width: 0; max-width: 100%; color: var(--ink); font-size: 15px; font-weight: 750; overflow-wrap: anywhere; }
+.alternative-price { flex: 1 1 58%; min-width: 0; color: var(--teal-dark); font-size: 14px; font-weight: 700; text-align: right; overflow-wrap: anywhere; }
+.alternative-meta { min-width: 0; max-width: 100%; margin-top: 3px; color: var(--muted); font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; }
+.test-purpose-note { box-sizing: border-box; width: 100%; min-width: 0; max-width: 100%; margin-top: 6px; padding: 10px 12px; border-left: 4px solid #087e8b; border-radius: 5px; background: #eef2f7; color: #172033; font-size: .96rem; line-height: 1.65; overflow-wrap: anywhere; word-break: normal; }
+.test-purpose-note strong { color: #0b3b35; }
 .test-rates { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 11px; background: white; font-size: 14px; }
 .test-rates span { color: var(--muted); }
 .test-rates b { color: var(--teal-dark); text-align: right; }
@@ -157,9 +159,9 @@ div[role="dialog"] {
   background: linear-gradient(90deg, #0e9bb7, #12b89d); transition: width .45s ease;
 }
 .match-meter__label {
-  position: relative; z-index: 1; display: block; max-width: 100%; padding: 4px 12px; color: #16384b;
+  position: relative; z-index: 1; display: inline-block; max-width: calc(100% - 10px); margin: 3px; padding: 4px 12px; border: 1px solid #fff; border-radius: 999px; background: #10233f; color: #fff;
   font-size: 12px; font-weight: 750; line-height: 1.35; text-align: center;
-  text-shadow: 0 1px 1px #ffffffa8;
+  text-shadow: none; overflow-wrap: anywhere; box-shadow: 0 1px 4px #10233f88;
 }
 .alternative-card { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
 .alternative-card:hover { transform: translateY(-2px); border-color: #9dd7d1; box-shadow: 0 8px 20px #087f8c12; }
@@ -199,4 +201,127 @@ button[help*="বিকল্প"] { border-radius: 10px; color: var(--teal-dark
 
 @media (prefers-reduced-motion: reduce) {
   .ambient-medical span, [data-testid="stVerticalBlockBorderWrapper"], .alternative-card, .match-meter__fill { animation: none; transition: none; }
+}
+
+/* Refined, high-contrast clinical dashboard theme. Local CSS keeps the UI
+   fast and self-contained while following a Tailwind-like token/utility scale. */
+:root {
+  --ink: #10233f;
+  --muted: #52677f;
+  --line: #d6e1ed;
+  --surface: #ffffff;
+  --page: #edf3fb;
+  --teal: #087e8b;
+  --teal-dark: #075b66;
+  --violet: #6457c8;
+  --coral: #e67756;
+  --amber: #d49625;
+}
+.stApp {
+  background:
+    radial-gradient(ellipse at 2% 0%, #d4f3eb 0, transparent 31%),
+    radial-gradient(ellipse at 100% 18%, #e2defc 0, transparent 29%),
+    linear-gradient(150deg, #f7f9ff 0%, #edf3fb 58%, #f4f9f8 100%);
+}
+.ambient-medical { display: none; }
+.block-container { max-width: 1280px !important; padding-top: 1.15rem !important; }
+.brand-head { padding: 9px 14px 17px; margin-bottom: 13px; border-bottom: 1px solid #d6e1ed; }
+.brand-mark {
+  background: linear-gradient(145deg, #087e8b, #1766a2 58%, #6457c8);
+  border-radius: 14px; box-shadow: 0 8px 22px #1766a233;
+}
+.brand-title { color: #10233f; font-size: 28px; }
+.brand-title span { color: #6457c8; }
+.brand-subtitle { color: #52677f; font-size: 13px; }
+[data-testid="stRadio"] [role="radiogroup"] {
+  padding: 5px; border: 1px solid #d2ddec; border-radius: 14px;
+  background: #ffffffdc; box-shadow: 0 5px 16px #1627470b;
+}
+[data-testid="stRadio"] [role="radiogroup"] label { color: #40566f; font-weight: 700; }
+[data-testid="stRadio"] [role="radiogroup"] label:has(input:checked) {
+  color: #fff !important; background: linear-gradient(120deg, #087e8b, #1766a2) !important;
+  box-shadow: 0 4px 12px #087e8b30;
+}
+[data-testid="stRadio"] [role="radiogroup"] label:has(input:checked) * { color: #fff !important; }
+.section-intro {
+  position: relative; overflow: hidden; text-align: left; max-width: none;
+  margin: 12px 0 24px; padding: 25px 30px; border: 1px solid #cbd8ef;
+  border-radius: 20px; color: #fff;
+  background: linear-gradient(112deg, #123d60 0%, #087e8b 60%, #6457c8 120%);
+  box-shadow: 0 14px 30px #17476b20;
+}
+.section-intro:after {
+  content: ""; position: absolute; width: 210px; height: 210px; right: -52px; top: -95px;
+  border: 1px solid #ffffff38; border-radius: 50%; box-shadow: 0 0 0 24px #ffffff0c, 0 0 0 50px #ffffff09;
+}
+.section-intro h2 { position: relative; z-index: 1; color: #fff !important; font-size: 1.7rem !important; margin: 0 0 7px; }
+.section-intro p { position: relative; z-index: 1; max-width: 760px; color: #e4f4ff !important; margin: 0; font-size: 1rem; }
+[data-testid="stVerticalBlockBorderWrapper"] {
+  border-color: #d5dfec !important; border-radius: 16px !important;
+  box-shadow: 0 8px 22px #1934560c;
+}
+[data-testid="stVerticalBlockBorderWrapper"]:hover {
+  border-color: #9ac9ca !important; box-shadow: 0 11px 26px #087e8b15;
+}
+[data-testid="stTextInput"] input, [data-testid="stSelectbox"] [data-baseweb="select"] > div {
+  box-sizing: border-box; border: 1.5px solid #7890aa !important; border-radius: 11px !important;
+  background: #fff !important; box-shadow: 0 2px 7px #19345612;
+}
+[data-testid="stTextInput"] input:focus, [data-testid="stSelectbox"] [data-baseweb="select"] > div:focus-within {
+  border-color: #087e8b; box-shadow: 0 0 0 3px #087e8b20;
+}
+button[kind="primary"], [data-testid="stBaseButton-primary"] {
+  background: linear-gradient(110deg, #087e8b, #1766a2) !important;
+  border-color: #087e8b !important; box-shadow: 0 4px 12px #087e8b25;
+}
+button[kind="primary"]:hover, [data-testid="stBaseButton-primary"]:hover {
+  background: linear-gradient(110deg, #075b66, #4d48a5) !important;
+  border-color: #075b66 !important; transform: translateY(-1px);
+}
+[data-testid="stAlert"] { border-radius: 13px; border-width: 1px; }
+.clinical-note { background: #eff5fb; color: #263b55; border-left: 4px solid #087e8b; }
+.clinical-note span { color: #40566f; }
+.test-rates { border-color: #ced9e9; background: linear-gradient(145deg, #f6f7ff, #fff); }
+.test-rates b { color: #4d48a5; }
+.match-meter { background: #e5ebf5; border-color: #c9d5e6; }
+.match-meter__fill { background: linear-gradient(90deg, #087e8b, #1766a2, #7664d5); }
+.app-footer { border-top-color: #d3deea; color: #52677f; }
+@media (max-width: 760px) {
+  html, body, .stApp, [data-testid="stAppViewContainer"] { max-width: 100vw; overflow-x: hidden; }
+  .block-container { width: 100% !important; max-width: 100% !important; padding: .8rem .75rem 6rem !important; }
+  [data-testid="stHorizontalBlock"] { flex-direction: column !important; align-items: stretch !important; gap: .65rem !important; }
+  [data-testid="stColumn"] { box-sizing: border-box; width: 100% !important; min-width: 0 !important; flex: 1 1 100% !important; }
+  [data-testid="stVerticalBlockBorderWrapper"] { box-sizing: border-box; max-width: 100%; }
+  .alternative-top { align-items: flex-start; }
+  .alternative-price { flex-basis: 100%; text-align: left; }
+  .test-purpose-note { font-size: .92rem; padding: 9px 10px; }
+  .test-rates { grid-template-columns: 1fr auto; }
+  .match-meter { min-height: 34px; }
+  .match-meter__label { font-size: 11px; }
+  .brand-home { max-width: 100%; }
+  .brand-subtitle { font-size: 11px; }
+  [data-testid="stRadio"] [role="radiogroup"] { flex-wrap: wrap; }
+  .section-intro { padding: 21px 19px; border-radius: 16px; }
+  .section-intro h2 { font-size: 1.42rem !important; }
+}
+
+/* Make the unified doctor search panel easy to distinguish from the page. */
+[data-testid="stVerticalBlockBorderWrapper"]:has(.st-key-doctor_combined_query) {
+  border: 2px solid #4c9ca1 !important;
+  background: linear-gradient(145deg, #f7fdfd 0%, #ffffff 100%);
+  box-shadow: 0 8px 26px #0f766e18;
+}
+[data-testid="stVerticalBlockBorderWrapper"]:has(.st-key-doctor_combined_query):hover {
+  border-color: #147b83 !important;
+}
+[data-testid="stSelectbox"] [data-baseweb="select"] > div,
+[data-testid="stTextInput"] input {
+  border: 2px solid #67839f !important;
+  border-radius: 11px !important;
+  background-color: #fff !important;
+}
+[data-testid="stSelectbox"] [data-baseweb="select"] > div:focus-within,
+[data-testid="stTextInput"] input:focus {
+  border-color: #087e8b !important;
+  box-shadow: 0 0 0 3px #087e8b24 !important;
 }
