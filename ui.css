@@ -286,6 +286,25 @@ button[kind="primary"]:hover, [data-testid="stBaseButton-primary"]:hover {
 .match-meter { background: #e5ebf5; border-color: #c9d5e6; }
 .match-meter__fill { background: linear-gradient(90deg, #087e8b, #1766a2, #7664d5); }
 .app-footer { border-top-color: #d3deea; color: #52677f; }
+.pdf-declaration {
+  box-sizing: border-box; width: 100%; margin: 18px 0 8px; padding: 14px 18px;
+  border: 1px solid #efc46f; border-left: 5px solid #e59b16; border-radius: 13px;
+  background: linear-gradient(110deg, #fff8e7, #fff3db 55%, #fff9ef);
+  color: #70430b; font-weight: 750; line-height: 1.75; text-align: center;
+  box-shadow: 0 6px 17px #b9791412;
+}
+.prescription-preview {
+  box-sizing: border-box; display: flex; flex-direction: column; align-items: center;
+  width: 100%; margin: 8px auto 0; text-align: center;
+}
+.prescription-preview img {
+  display: block; width: min(280px, 100%); height: auto; margin-inline: auto;
+  border-radius: 10px; box-shadow: 0 6px 18px #19345620;
+}
+.prescription-preview-caption { max-width: 360px; margin: 8px auto 0; color: #8497ad; font-size: 13px; line-height: 1.55; text-align: center; }
+.st-key-preview_verify_center [data-testid="stExpander"] {
+  box-sizing: border-box; width: min(360px, 100%) !important; margin: 12px auto 0 !important;
+}
 @media (max-width: 760px) {
   html, body, .stApp, [data-testid="stAppViewContainer"] { max-width: 100vw; overflow-x: hidden; }
   .block-container { width: 100% !important; max-width: 100% !important; padding: .8rem .75rem 6rem !important; }
@@ -303,6 +322,7 @@ button[kind="primary"]:hover, [data-testid="stBaseButton-primary"]:hover {
   [data-testid="stRadio"] [role="radiogroup"] { flex-wrap: wrap; }
   .section-intro { padding: 21px 19px; border-radius: 16px; }
   .section-intro h2 { font-size: 1.42rem !important; }
+  .pdf-declaration { padding: 12px 13px; font-size: .95rem; }
 }
 
 /* Make the unified doctor search panel easy to distinguish from the page. */

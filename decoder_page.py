@@ -1,4 +1,5 @@
 import io
+import base64
 import json
 import csv
 import hashlib
@@ -68,7 +69,7 @@ def _format_dataset_price(row):
         item = f"৳ {amount} / {basis}" if basis else f"৳ {amount}"
         if item not in parts:
             parts.append(item)
-    return "; ".join(parts) if parts else "ডেটা পাওয়া যায়নি"
+    return "; ".join(parts) if parts else "তথ্য পাওয়া যায়নি"
 
 
 @st.cache_data(show_spinner=False, max_entries=2048)
@@ -83,27 +84,27 @@ def dataset_price(brand_name, generic_name, dosage_form, query=""):
     if generic:
         same_generic = [r for r in candidates if _key(r.get("generic")) == generic]
         if not same_generic:
-            return "ডেটা পাওয়া যায়নি"
+            return "তথ্য পাওয়া যায়নি"
         candidates = same_generic
     if form:
         same_form = [r for r in candidates if form in _key(r.get("dosage form")) or _key(r.get("dosage form")) in form]
         if not same_form:
-            return "ডেটা পাওয়া যায়নি"
+            return "তথ্য পাওয়া যায়নি"
         candidates = same_form
     strength = _strength_key(query)
     if strength:
         same_strength = [r for r in candidates if strength in _key(r.get("strength"))]
         if not same_strength:
-            return "এই strength-এর দাম নেই"
+            return "তথ্য পাওয়া যায়নি"
         candidates = same_strength
     if not candidates:
-        return "ডেটা পাওয়া যায়নি"
+        return "তথ্য পাওয়া যায়নি"
     # Brand-only matches can span strengths and package types. Never present an
     # arbitrary row as the price for the prescription.
     prices = {_format_dataset_price(r) for r in candidates}
     strengths = {_key(r.get("strength")) for r in candidates}
     if len(prices) > 1 or len(strengths) > 1:
-        return "দাম ভিন্ন—যাচাই করুন"
+        return "তথ্য পাওয়া যায়নি"
     return next(iter(prices))
 
 
@@ -162,7 +163,8 @@ def fuzzy_find_medicine(input_query, dosage_form="", cutoff=40):
     row = candidates[0]
     med_info = (
         row.get("brand name", ""), row.get("generic", ""), row.get("manufacturer", ""),
-        row.get("dosage form", ""), row.get("package container", ""), "", row.get("strength", "")
+        row.get("dosage form", ""), row.get("package container", ""), "", row.get("strength", ""),
+        row.get("general use bn", "")
     )
     alternatives = []
     generic_key = _key(row.get("generic"))
@@ -717,7 +719,7 @@ def compare_transcriptions(first, second):
 
 @st.dialog("ছবি বিশ্লেষণের আগে সম্মতি", width="small")
 def prescription_consent_dialog():
-    st.markdown("প্রেসক্রিপশনের ছবি OCR-এর জন্য Gemini API-তে পাঠানো হবে। ওষুধের সাধারণ ব্যবহার জানাতে শুধু শনাক্ত হওয়া ওষুধের নাম Google Search-এ যাবে—ছবি বা রোগীর নাম নয়। টেস্টের কারণ সরবরাহকৃত CSV থেকে দেখানো হয়। Search grounding-এর অতিরিক্ত খরচ হতে পারে।")
+    st.markdown("প্রেসক্রিপশনের ছবি OCR-এর জন্য Gemini API-তে পাঠানো হবে। ওষুধের সাধারণ ব্যবহার medicine.csv এবং পরীক্ষার কারণ testrate.csv থেকে দেখানো হবে; এই তথ্য খোঁজার জন্য আলাদা Google Search API call করা হবে না।")
     st.markdown("এই অ্যাপ ছবি বা রোগীর তথ্য নিজস্ব disk/database-এ সংরক্ষণ করে না।")
     st.markdown("AI ভুল পড়তে পারে। ফল চিকিৎসক/ফার্মাসিস্টের যাচাই ছাড়া চিকিৎসার সিদ্ধান্তে ব্যবহার করবেন না।")
     if st.button("I Agree · আমি সম্মত", type="primary", use_container_width=True):
@@ -734,7 +736,7 @@ def render_decoder_page(system_api_key):
             prescription_consent_dialog()
         return
 
-    st.caption("ছবি OCR-এর জন্য Gemini API-তে যায়; সাধারণ use তথ্যের জন্য শুধু নাম Google Search-এ যায়।")
+    st.caption("ছবি OCR-এর জন্য Gemini API-তে যায়; ওষুধ ও পরীক্ষার সাধারণ তথ্য project CSV থেকে দেখানো হয়।")
     _, revoke_col = st.columns([5, 1])
     with revoke_col:
         if st.button("সম্মতি বাতিল", help="সম্মতি বাতিল করলে upload controls বন্ধ হবে"):
@@ -745,20 +747,24 @@ def render_decoder_page(system_api_key):
         with st.expander("📷 ক্যামেরা দিয়ে ছবি তুলুন", expanded=False):
             camera_file = st.camera_input("ছবি তুলুন")
     source_file = camera_file if camera_file is not None else uploaded_file
+    raw_image = None
     compare_reads = False
     if source_file is not None:
-        with st.expander("Advanced verification · অতিরিক্ত যাচাই", expanded=False):
-            compare_reads = st.checkbox("দ্বিতীয় AI read দিয়ে তুলনা (অতিরিক্ত API call)", key="compare_reads")
-    raw_image = None
-    if source_file is not None:
         raw_image = Image.open(source_file)
-        prev_l, prev_m, prev_r = st.columns([1, 2, 1])
-        with prev_m:
-            st.image(
-                raw_image,
-                caption=f"মূল ছবি: {raw_image.width} × {raw_image.height}px · OCR-এ সর্বোচ্চ 2400px পর্যন্ত পাঠানো হবে",
-                width=320,
+        with st.container(key="preview_verify_center"):
+            preview_buffer = io.BytesIO()
+            preview_image = ImageOps.exif_transpose(raw_image).convert("RGB")
+            preview_image.save(preview_buffer, format="JPEG", quality=88, optimize=True)
+            preview_data = base64.b64encode(preview_buffer.getvalue()).decode("ascii")
+            st.markdown(
+                '<div class="prescription-preview">'
+                f'<img src="data:image/jpeg;base64,{preview_data}" alt="আপলোড করা প্রেসক্রিপশনের প্রিভিউ">'
+                f'<div class="prescription-preview-caption">মূল ছবি: {preview_image.width} × {preview_image.height}px · OCR-এ সর্বোচ্চ 2400px পর্যন্ত পাঠানো হবে</div>'
+                '</div>',
+                unsafe_allow_html=True,
             )
+            with st.expander("Advanced verification · অতিরিক্ত যাচাই", expanded=False):
+                compare_reads = st.checkbox("দ্বিতীয় AI read দিয়ে তুলনা (অতিরিক্ত API call)", key="compare_reads")
 
     if source_file is not None:
         if not system_api_key:
@@ -766,7 +772,9 @@ def render_decoder_page(system_api_key):
             return
 
         image_bytes = source_file.getvalue()
-        cache_key = hashlib.sha256(image_bytes + system_api_key.encode("utf-8")).hexdigest()
+        cache_key = hashlib.sha256(
+            image_bytes + system_api_key.encode("utf-8") + f"|compare={int(compare_reads)}".encode("utf-8")
+        ).hexdigest()
         cached = st.session_state.get("prescription_analysis", {})
         if cached.get("key") == cache_key and cached.get("ocr_future") is not None:
             poll_ocr_job(cache_key, image_bytes)
@@ -792,7 +800,10 @@ def render_decoder_page(system_api_key):
             last_err = None
             st.caption("এই ছবির বিশ্লেষণ এই সেশনে আগেই করা হয়েছে।" + (f" · মডেল: {extracted.get('_model_used')}" if extracted.get('_model_used') else ""))
             if compare_reads and comparison is None:
-                st.info("দ্বিতীয় AI read চালু করতে আবার ছবি বিশ্লেষণ প্রয়োজন।")
+                if cached.get("second_read_error"):
+                    st.warning("দ্বিতীয় AI read সম্পন্ন হয়নি; প্রথম read-এর ফল নিচে দেখানো হয়েছে। আবার চেষ্টা করতে ছবিটি পুনরায় বিশ্লেষণ করুন।")
+                else:
+                    st.info("দ্বিতীয় AI read-এর agreement পাওয়া যায়নি।")
         else:
             image_copy = Image.open(io.BytesIO(image_bytes)).copy()
             future = _OCR_POOL.submit(process_prescription_image, image_copy, system_api_key, compare_reads)
@@ -803,30 +814,6 @@ def render_decoder_page(system_api_key):
         explanations = {"medicines": {}, "tests": {}, "sources": []}
         search_error = None
         search_pending = False
-        if extracted:
-            analysis_cache = st.session_state.get("prescription_analysis", {})
-            if analysis_cache.get("key") == cache_key and analysis_cache.get("explanation_version") == 4:
-                explanations = analysis_cache["explanations"]
-                search_error = analysis_cache.get("search_error")
-            else:
-                meds_to_explain = extracted.get("medicines", []) if isinstance(extracted.get("medicines", []), list) else []
-                tests_to_explain = extracted.get("tests", []) if isinstance(extracted.get("tests", []), list) else []
-                for med in meds_to_explain:
-                    if isinstance(med, dict) and med.get("name"):
-                        med_info, _ = fuzzy_find_medicine(" ".join(str(v) for v in (med.get("name"), med.get("strength")) if v), med.get("dosage_form", ""))
-                        if med_info and med_info[1]:
-                            med["search_query"] = f"{med.get('name')} ({med_info[1]})"
-                if analysis_cache.get("key") != cache_key or not analysis_cache.get("explanation_future"):
-                    analysis_cache = {
-                        **analysis_cache,
-                        "key": cache_key,
-                        "explanation_future": _EXPLANATION_POOL.submit(
-                            search_general_uses, system_api_key, meds_to_explain, tests_to_explain
-                        ),
-                    }
-                    st.session_state["prescription_analysis"] = analysis_cache
-                search_pending = True
-                poll_explanation_job(cache_key)
 
         if not extracted:
             error_text = str(last_err or "")
@@ -844,7 +831,7 @@ def render_decoder_page(system_api_key):
 
             st.divider()
             st.subheader("ক্লিনিক্যাল অ্যানালাইসিস ও ওষুধের বিবরণ")
-            st.caption("ওষুধের match score কেবল supplied dataset-এর সঙ্গে নামের আনুমানিক মিল; এটি নির্ভুলতার নিশ্চয়তা নয়। ওষুধের সাধারণ ব্যবহার Google Search থেকে আনা হয়; টেস্টের কারণ CSV থেকে। রোগের নাম পড়ার স্কোরটি OCR-পাঠের আনুমানিক স্কোর—রোগ নির্ণয়ের clinical accuracy নয়।")
+            st.caption("ওষুধের match score supplied dataset-এর সঙ্গে নামের আনুমানিক মিল। ওষুধের সাধারণ ব্যবহার medicine.csv এবং পরীক্ষার কারণ testrate.csv থেকে দেখানো হয়। এগুলো সাধারণ তথ্য; প্রেসক্রিপশনের নির্দিষ্ট কারণ চিকিৎসকই নিশ্চিত করতে পারবেন।")
             
             p_info = extracted.get('patient_info') or 'Not visible / দৃশ্যমান নয়'
             p_diag = extracted.get('diagnosis') or 'Not visible / দৃশ্যমান নয়'
@@ -878,14 +865,13 @@ def render_decoder_page(system_api_key):
                     m_dose = med.get("dose", "নির্দেশিত")
                     m_dur = med.get("duration", "")
                     dose_text = f"{m_dose} ({m_dur})" if m_dur else str(m_dose)
-                    m_purpose = explanations.get("medicines", {}).get(idx, {}).get("line_bn", "")
-                    m_purpose = m_purpose or (
-                        "ব্যাখ্যা খোঁজা হচ্ছে…" if search_pending else
-                        "এই নামটির নির্ভরযোগ্য সাধারণ ব্যবহার শনাক্ত করা যায়নি। ওষুধের প্যাকেটের জেনেরিক নাম চিকিৎসক বা ফার্মাসিস্টের সঙ্গে মিলিয়ে নিন।"
-                    )
-                    
                     lookup_query = " ".join(x for x in (m_query, m_strength) if x)
                     med_info, alts = fuzzy_find_medicine(lookup_query, m_form)
+                    m_purpose = med_info[7] if med_info and len(med_info) > 7 else ""
+                    if m_purpose:
+                        m_purpose = f"{med_info[0]}: {m_purpose.rstrip(' ।.!?')}।"
+                    else:
+                        m_purpose = "এই ওষুধের সাধারণ ব্যবহার CSV-তে পাওয়া যায়নি। জেনেরিক নাম চিকিৎসক বা ফার্মাসিস্টের সঙ্গে মিলিয়ে নিন।"
                     confidence = estimated_match_score(m_query, load_medicine_indexes()[0]) if m_query else 0
                     if med_info:
                         confidence = min(100, max(confidence, 75) + (10 if not m_strength or _strength_key(m_strength) in _key(med_info[6]) else -15))
@@ -897,7 +883,7 @@ def render_decoder_page(system_api_key):
                         with c_med:
                             render_match_meter(confidence, f"ওষুধের নাম ও ডেটাসেট match · {confidence}% আনুমানিক" + (" · হাতে যাচাই করুন" if confidence < 75 else " · strength/form মিলিয়ে নিন"))
                             if med_info:
-                                b_name, g_name, comp, form, price, ind, db_strength = med_info
+                                b_name, g_name, comp, form, price, ind, db_strength, general_use = med_info
                                 price_display = dataset_price(b_name, g_name, form, lookup_query)
                                 strength_label = f" · {db_strength}" if db_strength else ""
                                 st.markdown(f"##### {idx:02d} · **{b_name}** ({form}{strength_label})")
@@ -907,7 +893,7 @@ def render_decoder_page(system_api_key):
                                 st.markdown(f'<div class="detail-line"><span>সেবনবিধি</span><b>{html_escape(str(dose_text))}</b></div>', unsafe_allow_html=True)
                                 pdf_meds.append({"name": b_name, "general_use": m_purpose, "form": form, "dose": dose_text, "price": price_display, "confidence": f"{confidence}%"})
                             else:
-                                price_display = "ডেটা পাওয়া যায়নি"
+                                price_display = "তথ্য পাওয়া যায়নি"
                                 st.markdown(f"##### {idx:02d} · **{m_query}** ({m_form})")
                                 st.markdown(f'<div class="clinical-note"><span>ওষুধটির সাধারণ ব্যবহার</span>{html_escape(str(m_purpose))}</div>', unsafe_allow_html=True)
                                 st.markdown(f'<div class="price-line"><span>তালিকাভুক্ত দাম</span><b>{html_escape(str(price_display))}</b></div>', unsafe_allow_html=True)
@@ -930,14 +916,14 @@ def render_decoder_page(system_api_key):
                         t_name = t.get("test_name", "")
                     else:
                         t_name = str(t)
-                    t_purpose = explanations.get("tests", {}).get(t_idx, {}).get("line_bn", "")
-                    t_purpose = t_purpose or (
-                        "ব্যাখ্যা খোঁজা হচ্ছে…" if search_pending else
-                        "এই পরীক্ষার কারণ CSV-তে নেই। কেন দেওয়া হয়েছে তা চিকিৎসকের কাছে জেনে নিন."
-                    )
                     test_rates = dataset_test_price(t_name)
-                    if test_rates and test_rates[2]:
-                        t_purpose = test_rates[2]
+                    test_reason = test_rates[2] if test_rates and test_rates[2] else "এই পরীক্ষার সাধারণ কারণ CSV-তে পাওয়া যায়নি।"
+                    test_reason = re.sub(r"\s+", " ", test_reason).strip().rstrip("।.; ")
+                    if test_reason and "CSV-তে পাওয়া যায়নি" not in test_reason:
+                        test_reason = re.sub(r"মূল্যায়নে(?=;|$)", "মূল্যায়নের জন্য", test_reason)
+                        t_purpose = f"{t_name} পরীক্ষা সাধারণত {test_reason} করা হয়।"
+                    else:
+                        t_purpose = f"{t_name}: {test_reason}"
                     test_confidence = estimated_match_score(t_name, [r.get("Test name", "") for r in load_test_rows()]) if t_name else 0
                     if test_rates:
                         test_confidence = max(test_confidence, 85)
@@ -954,7 +940,7 @@ def render_decoder_page(system_api_key):
                         with tc1:
                             st.markdown(f"**{t_idx}. {t_name}**")
                             st.markdown(
-                                f'<div class="test-purpose-note"><strong>পরীক্ষাটি সাধারণত কেন করা হয়:</strong> {html_escape(str(t_purpose))}</div>',
+                                f'<div class="test-purpose-note">{html_escape(str(t_purpose))}</div>',
                                 unsafe_allow_html=True,
                             )
                         with tc2:
@@ -968,12 +954,10 @@ def render_decoder_page(system_api_key):
                                 st.caption(t_cost)
                         pdf_tests.append({"name": t_name, "reason": t_purpose, "cost": t_cost, "confidence": f"{test_confidence}%"})
 
-            if explanations.get("sources"):
-                with st.expander("Google Search sources · উৎস দেখুন", expanded=False):
-                    for source in explanations["sources"]:
-                        st.markdown(f"- [{source['title']}]({source['url']})")
-            elif search_error:
-                st.caption("Search-এ নির্ভরযোগ্য cited source পাওয়া যায়নি; এই অবস্থাটি ব্যাখ্যা ও ডাউনলোড রিপোর্টে স্পষ্টভাবে দেখানো হয়েছে।")
+            st.markdown(
+                '<div class="pdf-declaration">⚠️ এই ব্যাখ্যা সহায়ক মাত্র। বিকল্প ওষুধ ব্যবহারের পূর্বে ডাক্তারের পরামর্শ নিন।</div>',
+                unsafe_allow_html=True,
+            )
             st.write("")
             pdf_report = generate_report_pdf(p_info, p_diag, pdf_meds, pdf_tests, comparison, explanations.get("sources", []))
             st.download_button(
